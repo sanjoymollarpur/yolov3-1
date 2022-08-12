@@ -40,7 +40,7 @@ class cblock(nn.Module):
             return self.leaky(self.bn(self.conv(x)))
         else:
             return self.conv(x)
-
+        
 
 class resblock(nn.Module):
     def __init__(self, channels, use_res=True, num_repeat=1):
@@ -127,7 +127,7 @@ class yv3(nn.Module):
         return layers
 
 
-
+            
 if __name__ == "__main__":
     num_classes = 1
     IMAGE_SIZE = 448
